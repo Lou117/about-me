@@ -3,6 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <title>Lou117</title>
+        <link rel="preconnect"
+              href="https://fonts.googleapis.com"
+        />
+        <link rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+              rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: Sarabun, sans-serif;
+                margin: 0;
+                display: flex;
+                height: 100vh;
+                align-items: center;
+                font-size: 16px;
+
+                & > div {
+                    flex-grow: 1;
+                    padding: 1rem;
+
+                    &:first-child {
+                        border-right: 1px solid black;
+                    }
+                }
+
+                h1 {
+                    font-family: Parisienne, cursive;
+                }
+            }
+
+            @media screen and (max-width: 1080px) {
+                body {
+                    display: block;
+
+                    & > div {
+                        border: none;
+                        padding: 1rem 2rem;
+
+                        &:first-child {
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+            }
+        </style>
     </head>
     <body>
         <div lang="fr">
@@ -41,8 +89,8 @@
             <h1>Welcome to my Github profile!</h1>
             <p>
                 I'm Sylvain, I'm 34 years old, and I've been creating websites for almost 15 years. My background is
-                that of an autodidact, who discovered HTML, CSS, Javascript and PHP in its student room, before being
-                trained in work-study in Paris (between 2011 and 2012).
+                that of an autodidact, who discovered HTML, CSS, Javascript and PHP in his student room, before being
+                professionally trained in work-study in Paris (between 2011 and 2012).
             </p>
             <p>
                 If you want to contact me, you can use my LinkedIn profile:
