@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CV</title>
+        <style>
+            body {
+                margin: 0 auto;
+                width: 1024px;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                white-space: pre-line;
+                align-items: flex-start;
+            }
+
+            h2 {
+                border-bottom: 1px solid black;
+                text-transform: uppercase;
+                margin-top: 3em;
+            }
+
+            h4 {
+                padding-left: 1em;
+            }
+
+            h4 + div {
+                padding-left: 2em;
+                font-size: 0.8em;
+                margin-bottom: 3em;
+            }
+
+            article {
+                break-inside: avoid;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px dotted black;
+                text-align: center;
+                font-size: 0.8em;
+            }
+
+            td, th {
+                border-right: 1px dotted black;
+                border-bottom: 1px dotted black;
+                padding: 0.2em 0;
+            }
+
+            @page {
+                margin-top: 1cm;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                Sylvain Glaçon
+                31 rue Roque de Fillol
+                92800 Puteaux
+            </div>
+            <div>
+                <a href="mailto:sylvain.glacon@icloud.com">sylvain.glacon@icloud.com</a>
+                <a href="tel:+336 18 29 32 00">06 18 29 32 00</a>
+                <br>
+                29/09/1989 (34 ans)
+            </div>
+        </header>
+        <section>
+            <h2>Expérience professionnelle</h2>
+            <article>
+                <h3>Septembre 2023 - Présent</h3>
+                <h4>Chef de projet informatique - Société des Amis de Versailles - Versailles (78)</h4>
+                <div>
+                    <p>
+                        Coordination des échanges entre la direction et la présidence de la Société des Amis de Versailles
+                        et le prestataire chargé de la refonte du site internet de l'association (Rollingbox SAS).
+                        Contribution majeure à la structure du nouveau site, production des wireframes et de la nouvelle
+                        charte graphique, coordination avec l'équipe technique du prestataire. Organisation des comités de
+                        pilotage du projet, recueil des retours des membres de l'association lors des événements organisés
+                        au château de Versailles.
+                    </p>
+                    <p>
+                        Conception et réalisation du nouveau CMS et du <em>back-end</em> du nouveau site internet (PHP 7.4 -
+                        le prestataire étant chargé de la partie <em>front-end</em>), en parallèle d'une modernisation
+                        complète des méthodes de développement web de la Société des Amis de Versailles (installation d'une
+                        instance Gitlab, <em>versioning</em> du code, déploiement automatique par Gitlab CI, sauvegarde
+                        automatique des bases de données avec réplication).
+                    </p>
+                    <p>
+                        Depuis le 26 mars (lancement du nouveau site), maintenance et évolution du nouveau site internet, de
+                        l'interface d'administration <em>web-based</em> de l'association, production de l'appel d'offre pour
+                        la maintenance future de la plateforme, assistance aux salariés de l'association sur tous les sujets
+                        informatiques.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>Septembre 2018 - Juillet 2023</h3>
+                <h4>CTO - Echoline SAS - Paris (75)</h4>
+                <div>
+                    <p>
+                        Reportant directement au CEO, gestion de l'équipe technique (un développeur en plus du CTO, un
+                        sysadmin freelance, deux recrutements), planification des roadmaps en collaboration avec le CEO et
+                        les équipes métier d'abord, puis avec le Product Manager. Rédaction et mise à jour de la
+                        documentation. Collaboration (entièrement menée en anglais) avec les autres équipes techniques du
+                        Groupe Karnov. Gestion du parc informatique, formation des collaborateurs à la sécurité, assistance
+                        aux utilisateurs internes comme aux utilisateurs finaux.
+                    </p>
+                    <p>
+                        Conception, développement, mise à jour et maintenance de la plateforme destinée à remplacer
+                        l'application monolithique existante :
+                    </p>
+                    <ul>
+                        <li>
+                            API HTTP RESTful - PHP 7.2, MySQL 5.7 et 8.0, MongoDB 6, de nombreuses intégrations à des services
+                            tiers (Slack, Intercom, Mailchimp, Mandrill, Google Analytics, Google Translate, Google Sign-In).
+                            Génération de fichiers PDF et Excel par l'intermédiaire de librairies tierces (Twig pour la
+                            génération des chaînes HTML, DOMPDF et PHPSpreadsheet pour la génération des fichiers finaux).
+                            Gestion approfondie de l'i18n.
+                        </li>
+                        <li>
+                            Web-application (SPA) côté utilisateurs - VueJS 2, VueCLI, VueX, VueRouter, Axios, ainsi que
+                            l'utilisation de librairies tierces (HighCharts, Intercom, Hotjar, PDF.js). Fortes contraintes
+                            concernant l'utilisation mémoire, nécessitant de nombreuses optimisations. Gestion approfondie de
+                            l'i18n.
+                        </li>
+                        <li>
+                            Web-application (SPA) back-office - VueJS 3, ViteJS, VueX, Pinia, VueRouter, Axios, ainsi que
+                            l'utilisation de librairies tierces (HighCharts, Google Sign-In, Google Maps). Migrations complètes
+                            de VueJS 2 à VueJS 3 et de VueCLI à ViteJS sans interruptions de service.
+                        </li>
+                    </ul>
+                    <p>
+                        Conception, développement, mise à jour et maintenance d'un projet de R&D consistant à récupérer et
+                        conserver les différentes versions de tous les textes constituant la législation française :
+                    </p>
+                    <ul>
+                        <li>
+                            API HTTP RESTful - PHP 8.1, MariaDB 10, MongoDB 6, Redis. Fortes contraintes de volume (en nombre de
+                            fichiers, en volume de stockage total et en besoin d'indexation).
+                        </li>
+                        <li>
+                            Web-application (SPA) - VueJS 3, ViteJS, Pinia, VueRouter, Axios.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <h3>Septembre 2017 - Juin 2018</h3>
+                <h4>Lead developer / CTO - Jubily SAS - Neuilly-sur-Seine (92)</h4>
+                <div>
+                    <p>
+                        Conception, développement, mise à jour et maintenance des APIs (PHP 7.1, MySQL 5.6) et des applications
+                        de back-office interne (HTML, SCSS, jQuery, Bootstrap), en collaboration avec un prestataire externe.
+                        Coordination avec les développeurs des applications mobiles. Gestion approfondie de l’infrastructure
+                        technique. Report aux deux co-fondateurs (CEO et COO) de Jubily, participation active à la conception
+                        des nouveaux services de l’entreprise.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>Octobre 2016 - Mars 2017</h3>
+                <h4>Lead Developer - Groupe Technicis (devenu Acolad) - Boulogne-Billancourt (92)</h4>
+                <div>
+                    <p>
+                        Conception de l’architecture d’un ERP web-based destiné à remplacer l’ERP existant du Groupe.
+                        Implémentation de plusieurs API HTTP REST (PHP 7.1 - framework Slim, MySQL 5.7, MongoDB 3,
+                        MeteorJS 1.4). Gestion courante de l’équipe (3 développeurs), des recrutements internes (1 développeur)
+                        et relation avec les prestataires (1 développeur). Report aux comités de direction du Groupe sur
+                        l’avancement du projet d’ERP.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>Décembre 2014 - Septembre 2016</h3>
+                <h4>Chef de projet fonctionnel - Pôle R&D - iProspect France - Courbevoie (92)</h4>
+                <div>
+                    <p>
+                        Gestion de la relation entre le pôle R&D et les différents équipes « métier » d’iProspect et définition
+                        des besoins techniques. Réalisation des cahiers des charges et maquettes à destination de l’équipe de
+                        développeurs (7 développeurs). Accompagnement en clientèle des équipes commerciales sur les sujets
+                        techniques. Réalisation et soumission aux clients des maquettes et des cahiers des charges de dashboards
+                        réalisés sur Datorama. Mise en place des flux de données, des dashboards et de leurs représentations
+                        graphiques sur la plateforme Datorama.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h3>Septembre 2011 - Décembre 2014</h3>
+                <h4>Développeur Web - Pôle R&D - iProspect France - Courbevoie (92)</h4>
+                <div>
+                    <p>
+                        Développement et maintenance de scripts PHP et d’applications web-based destinés à la gestion des
+                        données générées et/ou gérées par les équipes « métier » d’iProspect France.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Technologies</h2>
+            <p>Certifié <em>Zend Certified Engineer PHP 5.3</em> en Août 2013</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Connaissance limitée</th>
+                        <th>Connaissance intermédiaire</th>
+                        <th>Connaissance approfondie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MeteorJS</td>
+                        <td>Symfony</td>
+                        <td>PHP (5.3+)</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>Redis</td>
+                        <td>Javascript (ES5+)</td>
+                    </tr>
+                    <tr>
+                        <td>Hadoop</td>
+                        <td></td>
+                        <td>VueJS (2 & 3)</td>
+                    </tr>
+                    <tr>
+                        <td>Services AWS</td>
+                        <td></td>
+                        <td>MySQL / MariaDB</td>
+                    </tr>
+                    <tr>
+                        <td>Services Azure</td>
+                        <td></td>
+                        <td>MongoDB (4+)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Formation</h2>
+            <h3>Septembre 2011 - Septembre 2012</h3>
+            <p>Formation de développeur PHP-MySQL (IP-Formation - Paris)</p>
+            <h3>2009 - 2011</h3>
+            <p>Autoformation au matériel informatique, puis au développement Web</p>
+            <h3>2007</h3>
+            <p>Baccalauréat Section Littéraire Options Langues - Amiens (80) - Mention Bien</p>
+        </section>
+        <section>
+            <h2>Centres d'intérêt</h2>
+            <p>
+                Informatique générale, haute technologie au sens large (micro-électronique, aérospatial) - Jeux vidéo
+                (gestion, simulation, RTS) - Passionné d’aéronautique - AFOL niveau intermédiaire - Membre de la Société
+                des Amis de Versailles (depuis 2020).
+            </p>
+        </section>
+    </body>
+</html>
