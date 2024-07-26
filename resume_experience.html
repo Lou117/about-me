@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>CV</title>
+        <title>CV - Sylvain Glaçon - Expérience</title>
+        <link rel="preconnect"
+              href="https://fonts.googleapis.com"
+        />
+        <link rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossorigin
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+              rel="stylesheet"
+        />
         <style>
             body {
                 margin: 0 auto;
+                font-size: 16px;
                 width: 1024px;
-                font-family: Helvetica, Arial, sans-serif;
+                font-family: Sarabun, sans-serif;
             }
 
-            header {
-                display: flex;
-                justify-content: space-between;
-                white-space: pre-line;
-                align-items: flex-start;
+            h1, h2, h3 {
+                font-family: "Source Code Pro", monospace;
+                font-weight: normal;
             }
 
             h2 {
                 border-bottom: 1px solid black;
                 text-transform: uppercase;
-                margin-top: 3em;
+                margin-top: 3rem;
             }
 
             h4 {
-                padding-left: 1em;
+                font-family: "Source Code Pro", monospace;
+                padding-left: 1rem;
             }
 
             h4 + div {
-                padding-left: 2em;
-                font-size: 0.8em;
-                margin-bottom: 3em;
+                padding-left: 1rem;
             }
 
             article {
+                margin-bottom: 4rem;
                 break-inside: avoid;
             }
 
@@ -55,20 +64,27 @@
                 margin-top: 1cm;
             }
         </style>
+        <script>
+            window.addEventListener("load", () => {
+                const now = new Date();
+                let age = (now.getFullYear() - 1989).toString();
+
+                if (((now.getMonth() * 100) + now.getDay()) < 929) {
+                    age--;
+                }
+
+                document.getElementById("age").innerText = age;
+            });
+        </script>
     </head>
     <body>
         <header>
-            <div>
-                Sylvain Glaçon
-                31 rue Roque de Fillol
-                92800 Puteaux
-            </div>
-            <div>
-                <a href="mailto:sylvain.glacon@icloud.com">sylvain.glacon@icloud.com</a>
-                <a href="tel:+336 18 29 32 00">06 18 29 32 00</a>
-                <br>
-                29/09/1989 (34 ans)
-            </div>
+            <h1>Sylvain Glaçon</h1>
+            <p>
+                <a href="https://www.linkedin.com/in/sylvainglacon/"
+                   target="_blank"
+                >https://www.linkedin.com/in/sylvainglacon/</a> - 29/09/1989 (<span id="age"></span> ans)
+            </p>
         </header>
         <section>
             <h2>Expérience professionnelle</h2>
