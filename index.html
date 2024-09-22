@@ -21,33 +21,41 @@
                 height: 100vh;
                 align-items: center;
                 font-size: 16px;
+                background-color: #E4DFDA;
+                --color-red: #C1666B;
+                --color-green: rgb(62, 153, 148);
+            }
 
-                & > div {
-                    flex-grow: 1;
-                    padding: 1rem;
+            body > div {
+                flex-grow: 1;
+                padding: 1rem;
+            }
 
-                    &:first-child {
-                        border-right: 1px solid black;
-                    }
-                }
+            body > div:first-child {
+                border-right: 1px solid black;
+            }
 
-                h1 {
-                    font-family: Parisienne, cursive;
-                }
+            body > div a {
+                display: block;
+                color: var(--color-red);
+            }
+
+            body h1 {
+                font-family: Parisienne, cursive;
             }
 
             @media screen and (max-width: 1080px) {
                 body {
                     display: block;
+                }
 
-                    & > div {
-                        border: none;
-                        padding: 1rem 2rem;
+                body > div {
+                    border: none;
+                    padding: 1rem 2rem;
+                }
 
-                        &:first-child {
-                            border-bottom: 1px solid black;
-                        }
-                    }
+                body > div:first-child {
+                    border-bottom: 1px solid black;
                 }
             }
         </style>
@@ -61,28 +69,14 @@
                 d'être formé en alternance à Paris (entre 2011 et 2012).
             </p>
             <p>
+                Pour découvrir mon parcours, vous pouvez accéder à mon CV "augmenté" :
+                <a href="resume_fr.html">lou117.github.io/about-me/resume_fr</a>
+            </p>
+            <p>
                 Pour me contacter, vous pouvez utiliser mon profil LinkedIn :
                 <a href="https://www.linkedin.com/in/sylvainglacon/"
-                   target="_blank">https://www.linkedin.com/in/sylvainglacon/
+                   target="_blank">linkedin.com/in/sylvainglacon
                 </a>
-            </p>
-            <p>
-                Pour découvrir mon parcours et/ou mes réalisations, vous trouverez ici :
-            </p>
-            <ul>
-                <li>
-                    <a href="resume_experience.html">un CV orienté "expérience"</a>
-                </li>
-                <li>
-                    <a href="resume_achievements.html">un CV orienté "réalisations"</a>
-                </li>
-            </ul>
-            <p>
-                J'ai l'honneur de pouvoir produire, si vous le souhaitez, plusieurs lettres de recommandation couvrant
-                différents aspects de mon parcours et de ma carrière.
-            </p>
-            <p>
-                J'espère que vous serez convaincus par mon profil !
             </p>
         </div>
         <div lang="en">
@@ -93,28 +87,14 @@
                 professionally trained in work-study in Paris (between 2011 and 2012).
             </p>
             <p>
+                To discover what have been my career so far, you can access my "augmented" resume :
+                <a href="resume_en.html">lou117.github.io/about-me/resume_en</a>
+            </p>
+            <p>
                 If you want to contact me, you can use my LinkedIn profile:
                 <a href="https://www.linkedin.com/in/sylvainglacon/"
-                   target="_blank">https://www.linkedin.com/in/sylvainglacon/
+                   target="_blank">linkedin.com/in/sylvainglacon
                 </a>
-            </p>
-            <p>
-                If you want to discover my career and/or my achievements throughout the years, you'll find here:
-            </p>
-            <ul>
-                <li>
-                    <a href="resume_experience.html">an "experience"-oriented resume</a>
-                </li>
-                <li>
-                    <a href="resume_achievements.html">an "achievements"-oriented resume</a>
-                </li>
-            </ul>
-            <p>
-                I'm honored to be able to produce, if you're interested in them, several letters of recommendation
-                covering different aspects of my background and career.
-            </p>
-            <p>
-                I look forward to hearing from you!
             </p>
         </div>
     </body>

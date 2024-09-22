@@ -1,0 +1,104 @@
+/* General style */
+
+body {
+    font-size: 16px;
+    font-family: Sarabun, sans-serif;
+    margin: 0 auto 2rem;
+    width: 1024px;
+    background-color: #E4DFDA;
+    --color-red: #C1666B;
+    --color-green: rgb(62,153,148);
+}
+
+.print-only {
+    display: none;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: var(--color-red);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    margin: 1.75rem 0 0.75rem;
+    border-bottom: 1px solid var(--color-green);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* Header style */
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+header p {
+    text-align: right;
+}
+
+header p > * {
+    display: block;
+}
+
+header small {
+    font-size: 0.75rem;
+}
+
+header a {
+    margin-bottom: 0.5rem;
+}
+
+/**/
+
+#summary {
+    border: 1px solid var(--color-green);
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Jobs */
+
+h2 + article h3 {
+    margin-top: 0;
+}
+
+article h4 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin: 0 0 0.25rem;
+}
+
+details {
+    border-bottom: 1px dotted var(--color-green);
+    padding: 0.5rem 0;
+}
+
+summary {
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+summary::first-letter {
+    margin-left: 0.5rem;
+}
+
+/**/
